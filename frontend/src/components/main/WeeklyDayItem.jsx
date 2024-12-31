@@ -16,7 +16,7 @@ export function WeeklyDayItem({ text, DayItemClick }) {
   };
   return (
     <Box onClick={() => DayItemClick()} width={"300px"} h={"350px"}>
-      <Card.Root>
+      <Card.Root colorPalette={"accent"}>
         <Card.Body>
           <Card.Title>
             <Box display={"flex"}>
