@@ -5,7 +5,7 @@ import { Button } from "../ui/button.jsx";
 import { Checkbox } from "../ui/checkbox.jsx";
 import { SlMenu } from "react-icons/sl";
 
-export function WeeklyDayItem({ text, color, DayItemClick }) {
+export function WeeklyDayItem({ text, DayItemClick }) {
   const [addTask, setAddTask] = useState(false);
   const [taskList, setTaskList] = useState([]);
   const [taskText, setTaskText] = useState("");
@@ -15,12 +15,7 @@ export function WeeklyDayItem({ text, color, DayItemClick }) {
     setTaskText("");
   };
   return (
-    <Box
-      hover={color}
-      onClick={() => DayItemClick()}
-      width={"300px"}
-      h={"350px"}
-    >
+    <Box onClick={() => DayItemClick()} width={"300px"} h={"350px"}>
       <Card.Root>
         <Card.Body>
           <Card.Title>

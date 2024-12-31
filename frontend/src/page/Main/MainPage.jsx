@@ -36,7 +36,6 @@ export function MainPage() {
             <WeeklyDayItem
               DayItemClick={() => setClickedDay(item)}
               text={item}
-              color={"gray.300"}
             />
           );
         })}
