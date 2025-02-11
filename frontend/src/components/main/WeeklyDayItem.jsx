@@ -14,6 +14,7 @@ export function WeeklyDayItem({ text, DayItemClick }) {
     setTaskList((prev) => [...prev, taskText]);
     setTaskText("");
   };
+
   return (
     <Box onClick={() => DayItemClick()} width={"300px"} h={"350px"}>
       <Card.Root colorPalette={"accent"}>
@@ -31,7 +32,6 @@ export function WeeklyDayItem({ text, DayItemClick }) {
                     <h2>{item}</h2>
                   </Checkbox>
                 ))}
-
               <HStack>
                 <FaSquarePlus
                   onClick={() => {
